@@ -1,6 +1,6 @@
 # BOT KIT
 
-Minimal viable framework for creating bots.
+Minimal viable package for creating bots.
 
 ## Development
 
