@@ -2,18 +2,24 @@
 
 Minimal viable package for creating bots.
 
-## Development
-
-To kickstart the tutorial, you'll need to clone the repository containing the bot code. Follow these steps:
+## Usage
 
 ```bash
-git clone https://github.com/xmtp/botkit
-cd botkit
-# copy env variables template
-cp .env.example .env
+yarn add @xmtp/botkit
 ```
 
-## Install dependencies
+```tsx
+import { createClient, run, HandlerContext } from "@xmtp/botkit";
+
+run(async (context: HandlerContext) => {
+  const messageBody = context.message.content;
+
+  // To reply, just call `reply` on the HandlerContext.
+  await context.reply(`ECHO: ${messageBody}`);
+});
+```
+
+## Running the bot
 
 > ⚠️ Bot kit is not compatible with `bun`. Use `npm` or `yarn`
 
@@ -22,12 +28,10 @@ cp .env.example .env
 yarn install
 
 # running the bot
-
 yarn build
 yarn start
 
-# to run with hot-reload:
-
+# to run with hot-reload
 yarn build:watch
 yarn start:watch
 ```
@@ -37,4 +41,15 @@ yarn start:watch
 ```bash
 KEY= # the private key of the bot
 XMTP_ENV= # set to production or dev network
+```
+
+## Development
+
+To kickstart the tutorial, you'll need to clone the repository containing the bot code. Follow these steps:
+
+```bash
+git clone https://github.com/xmtp/botkit
+cd botkit
+# copy env variables template
+cp .env.example .env
 ```
