@@ -9,7 +9,7 @@ yarn add @xmtp/botkit
 ```
 
 ```tsx
-import { createClient, run, HandlerContext } from "@xmtp/botkit";
+import { xmtpClient, run, HandlerContext } from "@xmtp/botkit";
 
 run(async (context: HandlerContext) => {
   const messageBody = context.message.content;
@@ -53,3 +53,23 @@ cd botkit
 # copy env variables template
 cp .env.example .env
 ```
+
+### Running examples in package.json
+
+1. **Echo Example:**
+
+Simple echo bot example
+
+```bash
+yarn example:echo
+```
+
+2. **Conversational Example:**
+
+Adds the conversation logic with step tracking.
+
+```bash
+yarn example:conversational
+```
+
+These scripts use `concurrently` to run the TypeScript compiler in watch mode and `nodemon` to execute the compiled JavaScript files, ensuring that any changes you make are automatically picked up and the bot restarts with the new code.

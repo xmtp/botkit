@@ -3,7 +3,7 @@ import { Wallet } from "ethers";
 import { GrpcApiClient } from "@xmtp/grpc-api-client";
 
 // Accept a config object as a parameter
-export default async function createClient(config = {}): Promise<XmtpClient> {
+export default async function xmtpClient(config = {}): Promise<XmtpClient> {
   const key = process.env.KEY;
   if (!key) {
     throw new Error("KEY not set");

@@ -1,11 +1,10 @@
-import createClient from "./client.js";
+import xmtpClient from "./client.js";
 import HandlerContext from "./handler-context.js";
 
 type Handler = (context: HandlerContext) => Promise<void>;
 
 export default async function run(handler: Handler, extraConfig?: any) {
-  const client = await createClient(extraConfig);
-
+  const client = await xmtpClient(extraConfig);
   console.log(`Listening on ${client.address}`);
 
   for await (const message of await client.conversations.streamAllMessages()) {

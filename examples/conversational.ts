@@ -22,7 +22,7 @@ run(async (context: HandlerContext) => {
   let message = "";
   if (cacheStep === 0) {
     message =
-      "Welcome! Choose an option:\n1. Info\n2. Another Option\ntype 'stop' to restart";
+      "Welcome! Choose an option:\n1. Info\n2. Another Option\n\n\ntype 'stop' to restart";
     // Move to the next step
     inMemoryCacheStep.set(senderAddress, cacheStep + 1);
   } else if (cacheStep === 1) {
