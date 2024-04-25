@@ -15,12 +15,9 @@ cp .env.example .env
 
 ## Install dependencies
 
-> ⚠️ Ensure you're using `Yarn 4` for dependency management. Check with `yarn --version`.
+> ⚠️ Bot kit is not compatible with `bun`. Use `npm` or `yarn`
 
 ```bash
-# update to yarn 4
-yarn set version stable
-
 # install dependencies
 yarn install
 
