@@ -1,10 +1,10 @@
 import createClient from "./client.js";
 import HandlerContext from "./handler-context.js";
 
-type Handler = (message: HandlerContext) => Promise<void>;
+type Handler = (context: HandlerContext) => Promise<void>;
 
-export default async function run(handler: Handler) {
-  const client = await createClient();
+export default async function run(handler: Handler, extraConfig?: any) {
+  const client = await createClient(extraConfig);
 
   console.log(`Listening on ${client.address}`);
 
@@ -16,6 +16,7 @@ export default async function run(handler: Handler) {
 
       const context = new HandlerContext(message);
 
+      // Make sure to pass both context and extraConfig to the handler here
       await handler(context);
     } catch (e) {
       console.log(`error`, e);

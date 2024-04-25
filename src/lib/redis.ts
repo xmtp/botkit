@@ -1,4 +1,4 @@
-import { createClient } from "@redis/client";
+import { createClient, RedisClientType } from "@redis/client";
 
 export const getRedisClient = async () => {
   try {
@@ -9,8 +9,17 @@ export const getRedisClient = async () => {
         connectTimeout: 10000, // Timeout in milliseconds
       },
     });
+    const redisPersistence = await import("@xmtp/redis-persistence");
     await client.connect();
-    return client;
+    return {
+      redisClient: client,
+      redisConfig: {
+        basePersistance: new redisPersistence.RedisPersistence(
+          client as any,
+          "xmtp:"
+        ),
+      },
+    };
   } catch (error) {
     console.error(
       "Failed to connect to Redis. Please check the connection settings."
@@ -18,3 +27,15 @@ export const getRedisClient = async () => {
     throw new Error("Redis connection failure"); // Throw a generic error message
   }
 };
+/*
+export const getBasePersistence = async (redisClient: RedisClientType) => {
+  const redisPersistence = await import("@xmtp/redis-persistence");
+  // Assuming RedisPersistence expects a RedisClientType, cast it explicitly
+  return {
+    client: redisClient,
+    basePersistance: new redisPersistence.RedisPersistence(
+      redisClient as any,
+      "xmtp:"
+    ),
+  };
+};*/

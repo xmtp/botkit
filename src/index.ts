@@ -10,10 +10,9 @@ const inMemoryCacheStep = new Map<string, number>();
 
 //List of words to stop or unsubscribe.
 const stopWords = ["stop", "unsubscribe", "cancel", "list"];
+const { redisClient, redisConfig } = await getRedisClient();
 
 run(async (context: HandlerContext) => {
-  const redisClient = await getRedisClient();
-
   const { content, senderAddress } = context.message;
   const lowerContent = content.toLowerCase();
 
@@ -62,7 +61,7 @@ run(async (context: HandlerContext) => {
 cron.schedule(
   "0 0 * * *", // Daily or every 5 seconds in debug mode
   async () => {
-    const redisClient = await getRedisClient();
+    const { redisClient } = await getRedisClient();
     const keys = await redisClient.keys("*");
     console.log(`Running daily task. ${keys.length} subscribers.`);
     for (const address of keys) {
