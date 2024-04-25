@@ -1,6 +1,6 @@
 {
   "name": "@xmtp/botkit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "main": "dist/src/index.js",
   "files": [
@@ -12,6 +12,7 @@
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
     "example:echo": "nodemon dist/examples/echo.js && ts-node ./examples/echo.ts",
+    "example:conversational": "nodemon dist/examples/conversational.js && ts-node ./examples/conversational.ts",
     "example:gpt": "nodemon dist/examples/gpt.js && ts-node ./examples/gpt.ts"
   },
   "devDependencies": {
