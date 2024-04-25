@@ -1,4 +1,4 @@
-# BOT KIT
+# Bot Kit
 
 Minimal viable package for creating bots.
 
