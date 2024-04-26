@@ -25,7 +25,16 @@ run(async (context: HandlerContext) => {
 - [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
 - [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
 
-## Running the bot
+## Development
+
+To kickstart the tutorial, you'll need to clone the repository containing the bot code. Follow these steps:
+
+```bash
+git clone https://github.com/xmtp/botkit
+cd botkit
+# copy env variables template
+cp .env.example .env
+```
 
 > ⚠️ Bot kit is not compatible with `bun`. Use `npm` or `yarn`
 
@@ -50,15 +59,6 @@ XMTP_ENV= # set to production or dev network
 ```
 
 ## Development
-
-To kickstart the tutorial, you'll need to clone the repository containing the bot code. Follow these steps:
-
-```bash
-git clone https://github.com/xmtp/botkit
-cd botkit
-# copy env variables template
-cp .env.example .env
-```
 
 ## Deployment
 
