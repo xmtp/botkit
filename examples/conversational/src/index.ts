@@ -21,7 +21,6 @@ run(async (context: HandlerContext) => {
     await context.reply(
       "You are now unsubscribed. You will no longer receive updates!."
     );
-    return;
   }
 
   const cacheStep = inMemoryCacheStep.get(senderAddress) || 0;
@@ -33,8 +32,6 @@ run(async (context: HandlerContext) => {
   } else if (cacheStep === 1) {
     if (content === "1") {
       message = "Here is the info.";
-      //reset the bot to the initial step
-      inMemoryCacheStep.set(senderAddress, 0);
     } else if (content === "2") {
       await redisClient.set(senderAddress, "subscribed"); //test
       message =
