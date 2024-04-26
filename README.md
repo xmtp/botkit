@@ -79,7 +79,3 @@ Railway is a platform that simplifies application deployment. Here’s how to de
 ![](https://github.com/xmtp/awesome-xmtp/assets/1447073/9bb4f8c2-321e-4b6d-b52e-2105d69c4d47)
 
 Learn about the almost 2 million identities that are already part of XMTP by visiting the [Dune dashboard](https://dune.com/xmtp_team/dash).
-
-## Documentation 📚
-
-To learn more about XMTP, go to the [docs](https://docs.xmtp.org/).
