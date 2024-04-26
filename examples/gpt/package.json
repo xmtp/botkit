@@ -1,11 +1,6 @@
 {
-  "name": "@xmtp/botkit",
-  "version": "1.0.8",
+  "name": "echo-bot",
   "type": "module",
-  "main": "dist/src/index.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
@@ -17,9 +12,7 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@xmtp/grpc-api-client": "^0.2.4",
-    "@xmtp/xmtp-js": "^11.5.1",
-    "dotenv": "^16.4.5",
-    "ethers": "^5.7.2"
+    "@xmtp/botkit": "latest",
+    "openai": "latest"
   }
 }
