@@ -34,11 +34,11 @@ Railway is a platform that simplifies application deployment. Here’s how to de
 
 - Sign up at [Railway](https://railway.app/).
 - Click 'New Project' and select 'Node.js'.
-- Create a redis DB
-- Connect your GitHub repository or use Railway's template.
-- Set your environment variables and redis string url
+- Create a Rredis DB or other (Optional)
+- Connect your GitHub repository
+- Set your environment variables
 - Deploy your application.
-- Deploy a [ENS domain](https://ens.domains/) and share your bot!
+- Register an [ENS domain](https://ens.domains/) and share your bot!
 
 ## Development
 
