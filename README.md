@@ -19,11 +19,25 @@ run(async (context: HandlerContext) => {
 });
 ```
 
-### Examples
+## Examples
 
 - [Echo](https://github.com/xmtp/botkit/tree/main/examples/echo): Get started with a simple echo bot
 - [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
 - [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
+
+## Deployment
+
+Railway is a platform that simplifies application deployment. Here’s how to deploy this bot:
+
+> 🏎️ Want to race ahead? Start from a pre-built [railway template](https://railway.app/template/X174KA?referralCode=AxzNoN)
+
+- Sign up at [Railway](https://railway.app/).
+- Click 'New Project' and select 'Node.js'.
+- Create a redis DB
+- Connect your GitHub repository or use Railway's template.
+- Set your environment variables and redis string url
+- Deploy your application.
+- Deploy a [ENS domain](https://ens.domains/) and share your bot!
 
 ## Development
 
@@ -57,22 +71,6 @@ yarn start:watch
 KEY= # the private key of the bot
 XMTP_ENV= # set to production or dev network
 ```
-
-## Development
-
-## Deployment
-
-Railway is a platform that simplifies application deployment. Here’s how to deploy this bot:
-
-> 🏎️ Want to race ahead? Start from a pre-built [railway template](https://railway.app/template/X174KA?referralCode=AxzNoN)
-
-- Sign up at [Railway](https://railway.app/).
-- Click 'New Project' and select 'Node.js'.
-- Create a redis DB
-- Connect your GitHub repository or use Railway's template.
-- Set your environment variables and redis string url
-- Deploy your application.
-- Deploy a [ENS domain](https://ens.domains/) and share your bot!
 
 ## Identities 🥷🏻
 
