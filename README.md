@@ -81,7 +81,6 @@ Test the bots in messaging apps
 
 - [Converse](https://getconverse.app/): Own your conversations. Works with Frames (Transactions TBA)
 - [Coinbase Wallet](https://www.coinbase.com/wallet): Your key to the world of crypto. (Frame support TBA)
-- [Family](https://family.co/): Interacting with crypto has never been so simple (Frame support TBA)
 - [dev-inbox](https://dev-dev-inbox.vercel.app/): Dev focused messaging client that renders Frames (Transactions TBA) (dev network)
 
 ## Identities
