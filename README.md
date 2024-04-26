@@ -9,13 +9,14 @@ yarn add @xmtp/botkit
 ```
 
 ```tsx
-import { xmtpClient, run, HandlerContext } from "@xmtp/botkit";
+import { run, HandlerContext } from "@xmtp/botkit";
 
 run(async (context: HandlerContext) => {
-  const messageBody = context.message.content;
+  const { content, senderAddress } = context.message;
+  // Message sent from: senderAddress
 
   // To reply, just call `reply` on the HandlerContext.
-  await context.reply(`ECHO: ${messageBody}`);
+  await context.reply(`ECHO: ${content}`);
 });
 ```
 
