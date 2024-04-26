@@ -53,3 +53,27 @@ cd botkit
 # copy env variables template
 cp .env.example .env
 ```
+
+## Deployment
+
+Railway is a platform that simplifies application deployment. Here’s how to deploy this bot:
+
+> 🏎️ Want to race ahead? Start from a pre-built [railway template](https://railway.app/template/X174KA?referralCode=AxzNoN)
+
+- Sign up at [Railway](https://railway.app/).
+- Click 'New Project' and select 'Node.js'.
+- Create a redis DB
+- Connect your GitHub repository or use Railway's template.
+- Set your environment variables and redis string url
+- Deploy your application.
+- Deploy a [ENS domain](https://ens.domains/) and share your bot!
+
+## Identities 🥷🏻
+
+![](https://github.com/xmtp/awesome-xmtp/assets/1447073/9bb4f8c2-321e-4b6d-b52e-2105d69c4d47)
+
+Learn about the almost 2 million identities that are already part of XMTP by visiting the [Dune dashboard](https://dune.com/xmtp_team/dash).
+
+## Documentation 📚
+
+To learn more about XMTP, go to the [docs](https://docs.xmtp.org/).
