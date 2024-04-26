@@ -71,6 +71,7 @@ yarn build:watch
 yarn start:watch
 
 # run the echo example
+yarn build:watch
 yarn start:echo
 ```
 
