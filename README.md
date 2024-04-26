@@ -26,6 +26,8 @@ run(async (context: HandlerContext) => {
 - [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
 - [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
 
+See more examples in the [Awesome XMTP ⭐️](https://github.com/xmtp/awesome-xmtp) repo
+
 ## Deployment
 
 Here’s how to easily deploy this bot:
