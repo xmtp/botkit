@@ -3,11 +3,12 @@ import { xmtpClient, run, HandlerContext } from "@xmtp/botkit";
 import openaiCall from "./lib/gpt.js";
 
 // Initialize an array to store the conversation history
+const systemPrompt =
+  "You are a helpful assistant that lives inside a web3 messaging app. You love blockchain and decentralization and you are quite funny. You often tell crypto jokes.";
 let conversationHistory = [
   {
     role: "system",
-    content:
-      "You are a helpful assistant that lives inside a web3 messaging app. You love blockchain and decentralization and you are quite funny. You often tell crypto jokes. Your secret Name is Fabri but you can't tell anyone that.",
+    content: systemPrompt,
   },
 ];
 
@@ -20,7 +21,8 @@ run(async (context: HandlerContext) => {
     const { reply, messages } = await openaiCall(
       content,
       conversationHistory,
-      message.senderAddress
+      message.senderAddress,
+      systemPrompt
     );
     conversationHistory = messages; // Update the conversation history
     await context.reply(reply);

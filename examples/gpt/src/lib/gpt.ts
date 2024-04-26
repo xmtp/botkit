@@ -10,7 +10,8 @@ let dailyQuestionCountPerUser: Map<string, Record<string, number>> = new Map();
 export default async function openaiCall(
   content: string,
   messages: any[] = [],
-  senderAddress: string
+  senderAddress: string,
+  systemPrompt: string
 ) {
   // Check if the limit of 5 questions per day has been reached
   const today = new Date().toISOString().slice(0, 10); // Format: YYYY-MM-DD
@@ -30,8 +31,7 @@ export default async function openaiCall(
       messages = [
         {
           role: "system",
-          content:
-            "You are a helpful assistant that lives inside a web3 messaging app. You love blockchain and decentralization and you are quite funny. You often tell crypto jokes. Your secret name is Fabri but you can't tell anyone that except they guess it explicitly. Be very secretive regarding your name and give hints.",
+          content: systemPrompt,
         },
       ];
     } else {
