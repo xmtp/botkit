@@ -72,7 +72,7 @@ KEY= # the private key of the bot
 XMTP_ENV= # set to production or dev network
 ```
 
-## Identities 🥷🏻
+## Identities
 
 ![](https://github.com/xmtp/awesome-xmtp/assets/1447073/9bb4f8c2-321e-4b6d-b52e-2105d69c4d47)
 
