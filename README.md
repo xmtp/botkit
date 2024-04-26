@@ -19,6 +19,12 @@ run(async (context: HandlerContext) => {
 });
 ```
 
+### Examples
+
+- [Echo](https://github.com/xmtp/botkit/tree/main/examples/echo): Get started with a simple echo bot
+- [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
+- [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
+
 ## Running the bot
 
 > ⚠️ Bot kit is not compatible with `bun`. Use `npm` or `yarn`
