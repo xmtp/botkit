@@ -30,8 +30,6 @@ run(async (context: HandlerContext) => {
 
 Railway is a platform that simplifies application deployment. Here’s how to deploy this bot:
 
-> 🏎️ Want to race ahead? Start from a pre-built [railway template](https://railway.app/template/X174KA?referralCode=AxzNoN)
-
 - Sign up at [Railway](https://railway.app/).
 - Click 'New Project' and select 'Node.js'.
 - Create a Rredis DB or other (Optional)
