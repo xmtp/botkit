@@ -28,7 +28,7 @@ run(async (context: HandlerContext) => {
 
 ## Deployment
 
-Railway is a platform that simplifies application deployment. Here’s how to deploy this bot:
+Here’s how to easily deploy this bot:
 
 - Sign up at [Railway](https://railway.app/).
 - Click 'New Project' and select 'Node.js'.
@@ -49,7 +49,7 @@ cd botkit
 cp .env.example .env
 ```
 
-> ⚠️ Bot kit is not compatible with `bun`. Use `npm` or `yarn`
+> ⚠️ Bot kit is not compatible with `bun` yet. Use `npm` or `yarn`
 
 ```bash
 # install dependencies
