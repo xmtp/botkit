@@ -70,7 +70,7 @@ yarn start
 yarn build:watch
 yarn start:watch
 
-# run the example
+# run the echo example
 yarn start:echo
 ```
 
