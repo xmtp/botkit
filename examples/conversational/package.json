@@ -16,6 +16,6 @@
     "@xmtp/botkit": "latest",
     "@xmtp/redis-persistence": "^0.0.4",
     "node-cron": "^3.0.3",
-    "redis": "^4.6.13"
+    "@redis/client": "^1.5.14"
   }
 }
