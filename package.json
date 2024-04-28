@@ -1,6 +1,6 @@
 {
   "name": "@xmtp/botkit",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "main": "dist/src/index.js",
   "files": [
@@ -12,6 +12,9 @@
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
     "start:gm": "nodemon dist/src/gm.js"
+  },
+  "bin": {
+    "byob": "./byob/byob.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",

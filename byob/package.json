@@ -1,0 +1,21 @@
+{
+  "name": "create-byob",
+  "version": "1.0.0",
+  "main": "byob.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "create-byob": "byob.js"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
