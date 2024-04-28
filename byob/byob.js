@@ -1,14 +1,17 @@
 #!/usr/bin/env node
-const { program } = require("commander");
-const fs = require("fs-extra");
-const path = require("path");
+import { program } from "commander";
+import fs from "fs-extra";
+import path from "path";
+import { fileURLToPath } from "url";
+import { execa } from "execa"; // Import execa dynamically
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 program
   .name("byob")
   .description("CLI to initialize projects")
   .argument("<project-name>", "Name of the project to initialize")
   .action(async (name) => {
-    const { execa } = await import("execa");
     const projectPath = path.join(process.cwd(), name);
     const templatePath = path.join(__dirname, "template");
 
