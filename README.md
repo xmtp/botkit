@@ -1,22 +1,18 @@
-# Bot Kit
+# @xmto/botkit
 
 Minimal viable package for creating bots.
 
 ## Usage
 
-To install the package:
-
-```bash
-yarn add @xmtp/botkit
-```
-
-To create a new XMTP bot using the CLI:
+To create a new XMTP bot using the `CLI`:
 
 ```bash
 npx create-xmtp-bot my-bot-name
+# this command sets up a new bot project in the directory `my-bot-name`.
+cd my-bot-name
 ```
 
-This command sets up a new bot project in the directory `my-bot-name`.
+Here is the `index.ts` file code:
 
 ```tsx
 import { run, HandlerContext } from "@xmtp/botkit";
