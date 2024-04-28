@@ -13,7 +13,7 @@
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
     "start:gm": "nodemon dist/src/gm.js",
-    "release": "npm version patch;git add .;git commit -m 'update';git push;"
+    "release": "git add .;git commit -m 'update';git push;npm version patch;git add .;git commit -m 'update';git push;"
   },
   "bin": {
     "byob": "./byob/byob.js"
