@@ -12,7 +12,7 @@
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
     "start:gm": "nodemon dist/src/gm.js",
-    "release:patch": "npm version patch &&  git push && git push --tags && npm publish"
+    "release:patch": "env && npm version patch && npm publish && git push && git push --tags"
   },
   "bin": {
     "byob": "./byob/byob.js"
