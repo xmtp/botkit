@@ -1,6 +1,6 @@
-# Echo Bot
+# Gm Bot
 
-Simple echo bot
+Simple Gm bot
 
 ## Usage
 
@@ -11,7 +11,7 @@ import { xmtpClient, run, HandlerContext } from "@xmtp/botkit";
 run(async (context: HandlerContext) => {
   const { content, senderAddress } = context.message;
 
-  await context.reply(`ECHO: ${content}`);
+  await context.reply(`gm`);
 });
 ```
 

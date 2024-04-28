@@ -501,7 +501,7 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@xmtp/botkit@^1.0.8":
+"@xmtp/botkit@latest":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@xmtp/botkit/-/botkit-1.0.8.tgz#3df67082866d74358af8ceebc0eef30590a9d31f"
   integrity sha512-KL49nlIxvHoe372Vpuv/0YXOSC0HQM7nXew9aUWNHhPUshTSexbUc+P2ZjRPk+9QsYmFy5oe9Z6ojNMxXnWbKw==

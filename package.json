@@ -11,7 +11,7 @@
     "build:watch": "tsc -w",
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
-    "start:echo": "nodemon dist/src/echo.js"
+    "start:gm": "nodemon dist/src/gm.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",

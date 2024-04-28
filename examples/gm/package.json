@@ -1,5 +1,5 @@
 {
-  "name": "echo-bot",
+  "name": "gm-bot",
   "type": "module",
   "scripts": {
     "build": "tsc",

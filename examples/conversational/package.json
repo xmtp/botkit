@@ -1,5 +1,5 @@
 {
-  "name": "echo-bot",
+  "name": "conversational-bot",
   "type": "module",
   "scripts": {
     "build": "tsc",

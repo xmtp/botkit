@@ -1,9 +1,5 @@
 # Conversational Bot
 
-Simple echo bot
-
-## Usage
-
 This is a simple yet powerful conversational framework that will allow you to customize it to your needs.
 
 ```tsx

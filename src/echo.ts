@@ -6,5 +6,5 @@ run(async (context: HandlerContext) => {
   const { content, senderAddress } = context.message;
 
   // To reply, just call `reply` on the HandlerContext.
-  await context.reply(`ECHO: ${content}`);
+  await context.reply(`gm`);
 });

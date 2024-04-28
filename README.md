@@ -16,13 +16,13 @@ run(async (context: HandlerContext) => {
   const { content, senderAddress } = context.message;
 
   // To reply, just call `reply` on the HandlerContext.
-  await context.reply(`ECHO: ${content}`);
+  await context.reply(`gm`);
 });
 ```
 
 ## Examples
 
-- [Echo](https://github.com/xmtp/botkit/tree/main/examples/echo): Get started with a simple echo bot
+- [Gm](https://github.com/xmtp/botkit/tree/main/examples/gm): Get started with a simple gm bot
 - [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
 - [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
 
@@ -72,9 +72,9 @@ yarn start
 yarn build:watch
 yarn start:watch
 
-# run the echo example
+# run the gm example
 yarn build:watch
-yarn start:echo
+yarn start:gm
 ```
 
 ## Messaging apps 💬
