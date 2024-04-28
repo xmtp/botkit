@@ -11,7 +11,8 @@
     "build:watch": "tsc -w",
     "start:watch": "nodemon dist/src/index.js",
     "start": "node dist/src/index.js",
-    "start:gm": "nodemon dist/src/gm.js"
+    "start:gm": "nodemon dist/src/gm.js",
+    "release:patch": "npm version patch && npm publish"
   },
   "bin": {
     "byob": "./byob/byob.js"
