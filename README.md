@@ -6,9 +6,16 @@ Minimal viable package for creating bots.
 
 To create a new XMTP bot using the `CLI`:
 
+To install it run the following command:
+
+```bash
+npm install -g create-xmtp-bot
+```
+
+Run the command:
+
 ```bash
 npx create-xmtp-bot my-bot-name
-# this command sets up a new bot project in the directory `my-bot-name`.
 cd my-bot-name
 ```
 
