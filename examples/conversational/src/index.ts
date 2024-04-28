@@ -10,7 +10,7 @@ const inMemoryCacheStep = new Map<string, number>();
 const stopWords = ["stop", "unsubscribe", "cancel", "list"];
 async function start() {
   const redisClient = await getRedisClient();
-  const newBotConfig = await getRedisConfig(redisClient);
+  const newBotConfig = await getRedisConfig(redisClient); // Send it at the bottm of the run function
   run(async (context: HandlerContext) => {
     const { content, senderAddress } = context.message;
     const lowerContent = content.toLowerCase();
