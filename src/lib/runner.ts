@@ -3,8 +3,8 @@ import HandlerContext from "./handler-context.js";
 
 type Handler = (context: HandlerContext) => Promise<void>;
 
-export default async function run(handler: Handler, extraConfig?: any) {
-  const client = await xmtpClient(extraConfig);
+export default async function run(handler: Handler, newBotConfig?: any) {
+  const client = await xmtpClient(newBotConfig);
   console.log(`Listening on ${client.address}`);
 
   for await (const message of await client.conversations.streamAllMessages()) {
@@ -15,7 +15,7 @@ export default async function run(handler: Handler, extraConfig?: any) {
 
       const context = new HandlerContext(message);
 
-      // Make sure to pass both context and extraConfig to the handler here
+      // Make sure to pass both context and newBotConfig to the handler here
       await handler(context);
     } catch (e) {
       console.log(`error`, e);
