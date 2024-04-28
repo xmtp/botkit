@@ -2,6 +2,12 @@
 
 This is a simple yet powerful conversational framework that will allow you to customize it to your needs.
 
+## Usage
+
+### Conversational logic
+
+With simple concepts like steps and if statements create powerful conversational experiences:
+
 ```tsx
 const cacheStep = inMemoryCacheStep.get(senderAddress) || 0;
 
@@ -34,9 +40,9 @@ if (cacheStep === 0) {
 await context.reply(message);
 ```
 
-#### Cron for daily subscriptions
+### Cron for daily subscriptions
 
-Create a cron that sends daily messages to your **redis database** subscribers. This bot can run daily or according to your logic.
+Create a cron that sends daily messages to your **redis database** subscribers. This bot can run daily or according to your logic:
 
 ```jsx
 cron.schedule(
