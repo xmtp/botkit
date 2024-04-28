@@ -1,4 +1,4 @@
-# @xmto/botkit
+# @xmtp/botkit
 
 Minimal viable package for creating bots.
 
