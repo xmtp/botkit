@@ -29,6 +29,15 @@ program
 
     // Install dependencies
     await execa("yarn", ["install"]);
+    // Copy the .env.example file to .env in the new project directory
+    const envExamplePath = path.join(templatePath, ".env.example");
+    const envPath = path.join(projectPath, ".env");
+    if (fs.existsSync(envExamplePath)) {
+      await fs.copy(envExamplePath, envPath);
+      console.log("Environment file copied.");
+    } else {
+      console.error("Environment example file does not exist.");
+    }
 
     console.log("Your new project is ready!");
     console.log(

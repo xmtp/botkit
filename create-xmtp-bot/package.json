@@ -1,6 +1,6 @@
 {
-  "name": "create-byob",
-  "version": "1.0.1",
+  "name": "create-xmtp-bot",
+  "version": "1.0.0",
   "main": "byob.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "create-byob": "byob.js"
+    "create-xmtp-bot": "byob.js"
   },
   "dependencies": {
     "commander": "^12.0.0",

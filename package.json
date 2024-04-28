@@ -4,8 +4,7 @@
   "type": "module",
   "main": "dist/src/index.js",
   "files": [
-    "dist/**/*",
-    "byob/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc",
@@ -14,9 +13,6 @@
     "start": "node dist/src/index.js",
     "start:gm": "nodemon dist/src/gm.js",
     "release": "git add .;git commit -m 'update';git push;npm version patch;git add .;git commit -m 'update';git push;"
-  },
-  "bin": {
-    "byob": "./byob/byob.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
