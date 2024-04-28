@@ -15,7 +15,6 @@ export default async function run(handler: Handler, newBotConfig?: any) {
 
       const context = new HandlerContext(message);
 
-      // Make sure to pass both context and newBotConfig to the handler here
       await handler(context);
     } catch (e) {
       console.log(`error`, e);
