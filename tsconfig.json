@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "byob/**/*"],
   "compilerOptions": {
     "composite": true,
     "target": "ES2021",

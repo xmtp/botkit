@@ -16,7 +16,5 @@
     "commander": "^12.0.0",
     "execa": "^8.0.1",
     "fs-extra": "^11.2.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
