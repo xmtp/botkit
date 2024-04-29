@@ -48,7 +48,7 @@ Here’s how to easily deploy this bot:
 - Deploy your application.
 - Register an [ENS domain](https://ens.domains/) and share your bot!
 
-_Head to the tutorial on how to deploy an XMTP bot on Railway_
+_Head to the [tutorial on how to deploy an XMTP bot](https://junk-range-possible-git-farhack-xmtp-labs.vercel.app/docs/tutorials/bots) on Railway_
 
 ## Development
 
