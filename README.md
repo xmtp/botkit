@@ -12,7 +12,7 @@ npx install create-xmtp-bot@latest
 
 Please refer to its [documentation](https://github.com/xmtp/botkit/tree/main/create-xmtp-bot).
 
-## Usage
+## Overview
 
 Here's a basic example of setting up a bot that responds with a greeting:
 
