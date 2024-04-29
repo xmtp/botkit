@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { xmtpClient, run, HandlerContext } from "@xmtp/botkit";
+import { run, HandlerContext } from "@xmtp/botkit";
 import openaiCall from "./lib/gpt.js";
 
 // Initialize an array to store the conversation history

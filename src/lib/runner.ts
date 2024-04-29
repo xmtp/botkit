@@ -5,7 +5,6 @@ type Handler = (context: HandlerContext) => Promise<void>;
 
 export default async function run(handler: Handler, newBotConfig?: any) {
   const client = await xmtpClient(newBotConfig);
-  console.log(`Listening on ${client.address}`);
 
   for await (const message of await client.conversations.streamAllMessages()) {
     try {
