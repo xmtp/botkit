@@ -36,6 +36,8 @@ yarn start:gm
 
 ## Examples
 
+By default the `create-xmtp-bot` starter comes with a conversational bot but without using a DB. Here are other examples you can use just copy pasting files:
+
 - [Gm](https://github.com/xmtp/botkit/tree/main/examples/gm): Get started with a simple gm bot.
 - [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions with redisDb.
 - [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs.
