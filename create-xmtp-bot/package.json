@@ -1,6 +1,6 @@
 {
   "name": "create-xmtp-bot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "byob.js",
   "type": "module",
   "scripts": {
