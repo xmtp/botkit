@@ -1,6 +1,7 @@
 {
   "name": "gm-bot",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
@@ -12,6 +13,6 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@xmtp/botkit": "latest"
+    "@xmtp/botkit": "^1.0.25"
   }
 }
