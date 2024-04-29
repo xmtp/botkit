@@ -33,9 +33,9 @@ run(async (context: HandlerContext) => {
 
 ## Examples
 
-- [Gm](https://github.com/xmtp/botkit/tree/main/examples/gm): Get started with a simple gm bot
-- [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions
-- [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs
+- [Gm](https://github.com/xmtp/botkit/tree/main/examples/gm): Get started with a simple gm bot.
+- [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Drive retention with conversations and subscriptions with redisDb.
+- [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Relay messages through Open AI APIs.
 
 See more examples in the [Awesome XMTP ⭐️](https://github.com/xmtp/awesome-xmtp) repo
 
