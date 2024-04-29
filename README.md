@@ -45,11 +45,13 @@ Here’s how to easily deploy this bot:
 
 - Sign up at [Railway](https://railway.app/).
 - Click 'New Project' and select 'Node.js'.
-- Create a Rredis DB or other (Optional)
+- Create a Redis DB or other (Optional)
 - Connect your GitHub repository
 - Set your environment variables
 - Deploy your application.
 - Register an [ENS domain](https://ens.domains/) and share your bot!
+
+_Head to the tutorial on how to deploy an XMTP bot on Railway_
 
 ## Development
 
