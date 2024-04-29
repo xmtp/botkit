@@ -2,22 +2,19 @@
 
 Minimal viable package for creating bots.
 
+## Quick Start with CLI
+
+For a streamlined setup process, you can use the `create-xmtp-bot` CLI tool, which simplifies the creation and configuration of new XMTP bots.
+
+```bash
+npx install create-xmtp-bot@latest
+```
+
+Please refer to its [documentation](https://github.com/xmtp/botkit/tree/main/create-xmtp-bot).
+
 ## Usage
 
-To create a new XMTP bot using the `CLI`:
-
-```bash
-npm install -g create-xmtp-bot
-```
-
-Run the command:
-
-```bash
-npx create-xmtp-bot my-bot-name
-cd my-bot-name
-```
-
-Here is the `index.ts` file code:
+Here's a basic example of setting up a bot that responds with a greeting:
 
 ```tsx
 import { run, HandlerContext } from "@xmtp/botkit";
@@ -67,8 +64,8 @@ cp .env.example .env
 **Set the variables**
 
 ```bash
-KEY= # the private key of the bot
-XMTP_ENV= # set to production or dev network
+KEY= # 0x... the private key of the bot (with the 0x prefix)
+XMTP_ENV=production # or `dev`
 ```
 
 > ⚠️ Bot kit is not compatible with `bun` yet. Use `npm` or `yarn`
