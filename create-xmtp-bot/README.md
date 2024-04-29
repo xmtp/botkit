@@ -5,7 +5,9 @@ create-xmtp-bot is a command-line interface tool designed to help developers cre
 To install it run the following command:
 
 ```bash
-npx install create-xmtp-bot@latest
+npx create-xmtp-bot@latest bot-name
+# enter the recently created folder
+cd bot-name
 ```
 
 **Set the variables**

@@ -7,7 +7,7 @@ Minimal viable package for creating bots.
 For a streamlined setup process, you can use the `create-xmtp-bot` CLI tool, which simplifies the creation and configuration of new XMTP bots.
 
 ```bash
-npx install create-xmtp-bot@latest
+npx create-xmtp-bot@latest bot-name
 ```
 
 Please refer to its [documentation](https://github.com/xmtp/botkit/tree/main/create-xmtp-bot).
