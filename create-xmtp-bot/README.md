@@ -20,20 +20,9 @@ XMTP_ENV=production # or `dev`
 > ⚠️ Bot kit is not compatible with `bun` yet. Use `npm` or `yarn`
 
 ```bash
-# install dependencies
-yarn install
-
-# running the bot
-yarn build
-yarn start
-
 # to run with hot-reload
 yarn build:watch
 yarn start:watch
-
-# run the gm example
-yarn build:watch
-yarn start:gm
 ```
 
 ## Examples
