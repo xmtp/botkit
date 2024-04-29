@@ -90,7 +90,7 @@ yarn start:watch
 ## Variables
 
 ```bash
-KEY= # the private key of the bot
-XMTP_ENV= # set to production
+KEY= # 0x... the private key of the bot (with the 0x prefix)
+XMTP_ENV=production # or `dev`
 REDIS_CONNECTION_STRING= # the connection string for the Redis database
 ```

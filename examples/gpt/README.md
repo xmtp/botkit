@@ -56,7 +56,7 @@ yarn start:watch
 ## Variables
 
 ```bash
-KEY= # the private key of the bot
-XMTP_ENV= # set to production or dev network
+KEY= # 0x... the private key of the bot (with the 0x prefix)
+XMTP_ENV=production # or `dev`
 OPEN_AI_API_KEY= # openai api key
 ```
