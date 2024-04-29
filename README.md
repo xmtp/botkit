@@ -2,7 +2,7 @@
 
 Minimal viable package for creating bots.
 
-## Quick Start with CLI
+## CLI Quickstart
 
 For a streamlined setup process, you can use the `create-xmtp-bot` CLI tool, which simplifies the creation and configuration of new XMTP bots.
 
