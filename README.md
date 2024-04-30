@@ -52,7 +52,7 @@ _Head to the [tutorial on how to deploy an XMTP bot](https://junk-range-possible
 
 ## Development
 
-To kickstart the tutorial, you'll need to clone the repository containing the bot code. Follow these steps:
+To develop on this repo clone the repository containing the bot code:
 
 ```bash
 git clone https://github.com/xmtp/botkit
