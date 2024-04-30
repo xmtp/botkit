@@ -1,0 +1,18 @@
+{
+  "name": "gm-bot",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node dist/src/index.js",
+    "start:watch": "nodemon dist/src/index.js"
+  },
+  "dependencies": {
+    "@xmtp/botkit": "^1.0.25"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.3"
+  }
+}
