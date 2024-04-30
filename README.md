@@ -14,7 +14,7 @@ Please refer to its [documentation](https://github.com/xmtp/botkit/tree/main/cre
 
 ## Overview
 
-Here's a basic example of setting up a bot that responds with a greeting:
+Here's a basic example of the code with a bot that responds with a gm:
 
 ```tsx
 import { run, HandlerContext } from "@xmtp/botkit";
