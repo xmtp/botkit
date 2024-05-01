@@ -40,3 +40,7 @@ This repository uses the [Yarn package manager](https://yarnpkg.com/). To use it
 - `yarn format`: Run prettier format and write changes on all packages
 - `yarn format:check`: Run prettier format check on all packages
 - `yarn typecheck`: Typecheck all packages
+
+## 🚢 Publishing
+
+This repository uses [changesets](https://github.com/changesets/changesets) to publish updates. Pull requests must contain a changeset in order for changes to be published. The [changeset-bot](https://github.com/apps/changeset-bot) will guide you through this process.

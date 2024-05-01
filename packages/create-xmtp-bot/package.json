@@ -5,13 +5,18 @@
   "type": "module",
   "main": "byob.js",
   "module": "byob.js",
-  "bin": "byob.js",
+  "bin": {
+    "create-xmtp-bot": "byob.js"
+  },
+  "files": [
+    "byob.js",
+    "template/**/*"
+  ],
   "scripts": {
     "clean": "rm -rf .turbo && rm -rf node_modules",
     "format": "yarn format:base -w .",
     "format:base": "prettier --ignore-path ../../.gitignore",
-    "format:check": "yarn format:base -c .",
-    "release": "npm version patch; npm publish"
+    "format:check": "yarn format:base -c ."
   },
   "dependencies": {
     "@xmtp/botkit": "workspace:*",
@@ -26,5 +31,9 @@
   "packageManager": "yarn@4.1.1",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
