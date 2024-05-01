@@ -16,15 +16,15 @@
       "outputs": []
     },
     "conversational-bot#start": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "conversational-bot#build"],
       "persistent": true
     },
     "gm-bot#start": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "gm-bot#build"],
       "persistent": true
     },
     "gpt-bot#start": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "gpt-bot#build"],
       "persistent": true
     },
     "typecheck": {
