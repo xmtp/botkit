@@ -8,11 +8,19 @@
     "shared/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --filter='./packages/*'",
     "clean": "turbo run clean && rm -rf node_modules && rm -rf .turbo && yarn cache clean",
     "format": "turbo run format",
     "format:check": "turbo run format:check",
+    "publish": "yarn build && changeset publish",
+    "start:conversational": "turbo run start --filter='./examples/conversational'",
+    "start:gm": "turbo run start --filter='./examples/gm'",
+    "start:gpt": "turbo run start --filter='./examples/gpt'",
     "typecheck": "FORCE_COLOR=1 turbo run typecheck"
+  },
+  "dependencies": {
+    "@changesets/changelog-git": "^0.2.0",
+    "@changesets/cli": "^2.27.1"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

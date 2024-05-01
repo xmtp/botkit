@@ -19,6 +19,15 @@ To learn more about the contents of this repository, see this README and the REA
 
 See more examples in the [Awesome XMTP ⭐️](https://github.com/xmtp/awesome-xmtp) repo
 
+#### Run the example bots locally
+
+> **Note**  
+> Before starting the bots locally, install the necessary dependencies by running `yarn` first.
+
+- `yarn start:conversational`: Start the conversational bot
+- `yarn start:gm`: Start the GM bot
+- `yarn start:gpt`: Start the ChatGPT bot
+
 ## Contributing
 
 See our [contribution guide](./CONTRIBUTING.md) to learn more about contributing to this project.

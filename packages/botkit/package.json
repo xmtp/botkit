@@ -22,7 +22,6 @@
     "format": "yarn format:base -w .",
     "format:base": "prettier --ignore-path ../../.gitignore",
     "format:check": "yarn format:base -c .",
-    "release": "git add .;git commit -m 'update';git push;npm version patch;git add .;git commit -m 'update';git push;",
     "start": "node dist/src/index.js",
     "start:gm": "nodemon dist/src/gm.js",
     "start:watch": "nodemon dist/src/index.js",
@@ -43,5 +42,9 @@
   "packageManager": "yarn@4.1.1",
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

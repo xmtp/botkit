@@ -15,6 +15,18 @@
     "format:check": {
       "outputs": []
     },
+    "conversational-bot#start": {
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+    "gm-bot#start": {
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+    "gpt-bot#start": {
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
     "typecheck": {
       "dependsOn": ["^build"],
       "outputs": []
