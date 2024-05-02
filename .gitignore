@@ -39,7 +39,6 @@ logs
 
 # build artifacts
 dist
-build
 
 # yarn
 .pnp.*
@@ -49,9 +48,6 @@ build
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# typedocs
-docs
 
 # next.js
 .next
