@@ -694,27 +694,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/grpc-js@npm:^1.9.2":
-  version: 1.10.6
-  resolution: "@grpc/grpc-js@npm:1.10.6"
+"@grpc/grpc-js@npm:^1.10.6":
+  version: 1.10.7
+  resolution: "@grpc/grpc-js@npm:1.10.7"
   dependencies:
-    "@grpc/proto-loader": "npm:^0.7.10"
+    "@grpc/proto-loader": "npm:^0.7.13"
     "@js-sdsl/ordered-map": "npm:^4.4.2"
-  checksum: 10/97c738f7082f47918cb81979a272a291bd224607e8a7a17a2b6cedc6d77f4ef58d72073f5f26c29fedd63e5c3fb5dcc2ea51b586bce5d8ad16855558e6ed1352
+  checksum: 10/36eff98bb301eca78cbee149bda5e975c7f50a6c57087a2db9bebfb17f36d555caff4a8722ac24720ccb8e33a80a72dd2052e1ce3f8ec29f8a0be1e6223e2a97
   languageName: node
   linkType: hard
 
-"@grpc/proto-loader@npm:^0.7.10":
-  version: 0.7.12
-  resolution: "@grpc/proto-loader@npm:0.7.12"
+"@grpc/proto-loader@npm:^0.7.13":
+  version: 0.7.13
+  resolution: "@grpc/proto-loader@npm:0.7.13"
   dependencies:
     lodash.camelcase: "npm:^4.3.0"
     long: "npm:^5.0.0"
-    protobufjs: "npm:^7.2.4"
+    protobufjs: "npm:^7.2.5"
     yargs: "npm:^17.7.2"
   bin:
     proto-loader-gen-types: build/bin/proto-loader-gen-types.js
-  checksum: 10/c8a9f915d44881ca7dce108dfb81d853912d95d756308f1ea6b688f63c5342ada4fe0a7cfacc0b28f89a77a4e65cce91fad99e65d5ae49b3d4e1ec4863f84ad4
+  checksum: 10/7e2d842c2061cbaf6450c71da0077263be3bab165454d5c8a3e1ae4d3c6d2915f02fd27da63ff01f05e127b1221acd40705273f5d29303901e60514e852992f4
   languageName: node
   linkType: hard
 
@@ -1066,7 +1066,7 @@ __metadata:
   resolution: "@xmtp/botkit@workspace:packages/botkit"
   dependencies:
     "@types/node": "npm:^20.12.7"
-    "@xmtp/grpc-api-client": "npm:^0.2.4"
+    "@xmtp/grpc-api-client": "npm:^0.2.5"
     "@xmtp/xmtp-js": "npm:^11.5.1"
     dotenv: "npm:^16.4.5"
     ethers: "npm:^5.7.2"
@@ -1076,18 +1076,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@xmtp/grpc-api-client@npm:^0.2.4":
-  version: 0.2.4
-  resolution: "@xmtp/grpc-api-client@npm:0.2.4"
+"@xmtp/grpc-api-client@npm:^0.2.5":
+  version: 0.2.5
+  resolution: "@xmtp/grpc-api-client@npm:0.2.5"
   dependencies:
-    "@grpc/grpc-js": "npm:^1.9.2"
+    "@grpc/grpc-js": "npm:^1.10.6"
     "@protobuf-ts/grpc-transport": "npm:^2.9.1"
     "@protobuf-ts/runtime": "npm:^2.9.1"
     "@protobuf-ts/runtime-rpc": "npm:^2.9.1"
-    "@xmtp/proto": "npm:^3.28.0-beta.1"
-    "@xmtp/xmtp-js": "npm:^11.0.0-beta.9"
-    pino: "npm:^8.15.1"
-  checksum: 10/6d70b500a13e5ce9b6d65916c56f5da44abf9bdb22fb0fccc3bdaf099ddbf20fd549ea405f0431f64b253a33c50d3a7df167c3ace38d338e63d592e3c8007381
+    "@xmtp/proto": "npm:^3.52.0"
+    "@xmtp/xmtp-js": "npm:^11.3.12"
+    pino: "npm:^8.18.0"
+  checksum: 10/fe7bcda84e92f4c97c2e431d9d968bc68d19860edfc173382e443e518317a290826bf643ddfa09fa1fcf97b6fc20b76727c473d3a7513052ddad3f63d97213c5
   languageName: node
   linkType: hard
 
@@ -1103,15 +1103,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xmtp/proto@npm:^3.28.0-beta.1":
-  version: 3.54.1
-  resolution: "@xmtp/proto@npm:3.54.1"
+"@xmtp/proto@npm:3.54.0":
+  version: 3.54.0
+  resolution: "@xmtp/proto@npm:3.54.0"
   dependencies:
     long: "npm:^5.2.0"
     protobufjs: "npm:^7.0.0"
     rxjs: "npm:^7.8.0"
     undici: "npm:^5.8.1"
-  checksum: 10/d169af7134101ff1881b2bda10e9536ed2c3677b9b7cf3fbff82308cbd0206213b0137aff4c3f4b8db53bae79a5c5f7ea38e7169c252a0f9760313aedbc3e664
+  checksum: 10/536b846b234bdf49978716b232b6a25985a55bb0c10c825b090354cb43f0b071ee506e5a9765c69deb0e6a4b9aa4cd61abe2c9d2df563cfd6ec121197b591844
+  languageName: node
+  linkType: hard
+
+"@xmtp/proto@npm:^3.52.0":
+  version: 3.55.0
+  resolution: "@xmtp/proto@npm:3.55.0"
+  dependencies:
+    long: "npm:^5.2.0"
+    protobufjs: "npm:^7.0.0"
+    rxjs: "npm:^7.8.0"
+    undici: "npm:^5.8.1"
+  checksum: 10/6aec378031d966d28c9a3960f382936afed622aed843ac35e661b03cd6cdcfa4d1ad2bfd80f2731ca6f873bc30b0582d9a09cc5090c90b5fcaceef3b6a8d1601
   languageName: node
   linkType: hard
 
@@ -1139,7 +1151,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xmtp/xmtp-js@npm:^11.0.0-beta.9, @xmtp/xmtp-js@npm:^11.5.1":
+"@xmtp/xmtp-js@npm:^11.3.12":
+  version: 11.6.0
+  resolution: "@xmtp/xmtp-js@npm:11.6.0"
+  dependencies:
+    "@noble/secp256k1": "npm:1.7.1"
+    "@xmtp/proto": "npm:3.54.0"
+    "@xmtp/user-preferences-bindings-wasm": "npm:^0.3.6"
+    async-mutex: "npm:^0.5.0"
+    elliptic: "npm:^6.5.4"
+    long: "npm:^5.2.3"
+    viem: "npm:2.7.15"
+  checksum: 10/e06b771a4b7eb20c290924e3f423efdc9a88eb18a11d096e9b0c69ba034f7b5fb451cece37f85ad02b3983ebd5698f90db6b2591096c161029bc68d35c2b78cb
+  languageName: node
+  linkType: hard
+
+"@xmtp/xmtp-js@npm:^11.5.1":
   version: 11.5.1
   resolution: "@xmtp/xmtp-js@npm:11.5.1"
   dependencies:
@@ -3912,7 +3939,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^8.15.1":
+"pino@npm:^8.18.0":
   version: 8.21.0
   resolution: "pino@npm:8.21.0"
   dependencies:
@@ -4032,7 +4059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"protobufjs@npm:^7.0.0, protobufjs@npm:^7.2.4":
+"protobufjs@npm:^7.0.0, protobufjs@npm:^7.2.5":
   version: 7.2.6
   resolution: "protobufjs@npm:7.2.6"
   dependencies:
