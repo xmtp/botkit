@@ -21,7 +21,7 @@
     "start:watch": "nodemon dist/index.js"
   },
   "dependencies": {
-    "@xmtp/botkit": "^2.0.0"
+    "@xmtp/botkit": "latest"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
