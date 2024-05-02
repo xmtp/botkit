@@ -1,5 +1,11 @@
 # @xmtp/botkit
 
+## 2.3.0
+
+### Minor Changes
+
+- a9087e0: Fix cli tool
+
 ## 2.2.0
 
 ### Minor Changes
