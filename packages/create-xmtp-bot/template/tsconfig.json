@@ -1,23 +1,20 @@
 {
+  "include": ["src/**/*"],
   "compilerOptions": {
-    "composite": true,
-    "target": "ES2021",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "module": "ES2022",
-    "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "baseUrl": "./",
-    "types": ["@types/node"],
-    "allowJs": true,
+    "outDir": "./dist",
+    "allowJs": false,
+    "composite": false,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
     "strict": true,
-    "strictPropertyInitialization": false,
-    "skipLibCheck": true
+    "target": "ESNext"
   }
 }
