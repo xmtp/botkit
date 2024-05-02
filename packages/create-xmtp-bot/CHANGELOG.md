@@ -1,5 +1,16 @@
 # create-xmtp-bot
 
+## 1.2.0
+
+### Minor Changes
+
+- 2b9c1a1: rever grpc
+
+### Patch Changes
+
+- Updated dependencies [2b9c1a1]
+  - @xmtp/botkit@2.2.0
+
 ## 1.1.0
 
 ### Minor Changes
