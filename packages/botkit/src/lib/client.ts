@@ -23,7 +23,7 @@ export default async function xmtpClient(
 
   const defaultConfig = {
     env: env as any,
-    apiClientFactory: GrpcApiClient.fromOptions,
+    apiClientFactory: GrpcApiClient.fromOptions as any,
   };
   // Merge the default configuration with the provided config. Repeated fields in newBotConfig will override the default values
   const finalConfig = { ...defaultConfig, ...newBotConfig };
