@@ -9,7 +9,7 @@
     "start:watch": "nodemon dist/src/index.js"
   },
   "dependencies": {
-    "@xmtp/botkit": "^1.0.25"
+    "@xmtp/botkit": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",

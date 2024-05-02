@@ -5,9 +5,7 @@
   "type": "module",
   "main": "byob.js",
   "module": "byob.js",
-  "bin": {
-    "create-xmtp-bot": "byob.js"
-  },
+  "bin": "byob.js",
   "files": [
     "byob.js",
     "template/**/*"
