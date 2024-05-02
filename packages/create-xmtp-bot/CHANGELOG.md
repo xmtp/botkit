@@ -1,5 +1,17 @@
 # create-xmtp-bot
 
+## 1.3.0
+
+### Minor Changes
+
+- a9087e0: Fix cli tool
+
+### Patch Changes
+
+- d581e9f: Remove auto-install of dependencies when creating a new bot
+- Updated dependencies [a9087e0]
+  - @xmtp/botkit@2.3.0
+
 ## 1.2.0
 
 ### Minor Changes
