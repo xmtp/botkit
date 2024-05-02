@@ -1,5 +1,11 @@
 # create-xmtp-bot
 
+## 1.4.0
+
+### Minor Changes
+
+- 761f71e: Removed bot kit from root package
+
 ## 1.3.0
 
 ### Minor Changes
