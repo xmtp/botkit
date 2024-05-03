@@ -1,5 +1,11 @@
 # @xmtp/botkit
 
+## 2.3.1
+
+### Patch Changes
+
+- 8af9efc: Upgrade to latest GRPC client
+
 ## 2.3.0
 
 ### Minor Changes
