@@ -2,11 +2,11 @@ import { Client as XmtpClient } from "@xmtp/xmtp-js";
 import { Wallet } from "ethers";
 import { GrpcApiClient } from "@xmtp/grpc-api-client";
 
-// Accept a config object as a parameter
 export default async function xmtpClient(
   newBotConfig = {},
+  privateKey: string | null = null,
 ): Promise<XmtpClient> {
-  let key = process.env.KEY;
+  let key = privateKey ?? process.env.KEY;
   if (!key) {
     key = await Wallet.createRandom().privateKey;
     console.error(
@@ -27,8 +27,9 @@ export default async function xmtpClient(
   };
   // Merge the default configuration with the provided config. Repeated fields in newBotConfig will override the default values
   const finalConfig = { ...defaultConfig, ...newBotConfig };
+  console.log(`Creating client with config: ${JSON.stringify(finalConfig)}`);
   const client = await XmtpClient.create(wallet, finalConfig);
-
-  console.log(`Listening on ${client.address} on ${env} network.`);
+  console.log(`Listening on ${client.address}`);
+  client;
   return client;
 }
