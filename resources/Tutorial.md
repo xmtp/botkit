@@ -25,6 +25,7 @@ XMTP_ENV= # production or dev network
 Install dependencies and run your bot:
 
 ```bash
+yarn install
 # For development with hot-reload
 yarn build:watch
 yarn start:watch
@@ -85,16 +86,6 @@ run(async (context: HandlerContext) => {
 ```
 
 This script listens for messages and sends a options like showing info and subscribing logic.
-
-#### Examples
-
-Explore different types of bots:
-
-- [Gm](https://github.com/xmtp/botkit/tree/main/examples/gm): A basic greeting bot.
-- [Conversational](https://github.com/xmtp/botkit/tree/main/examples/conversational): Engage users with ongoing conversations and redis subscription
-- [GPT](https://github.com/xmtp/botkit/tree/main/examples/gpt): Utilize OpenAI APIs for dynamic responses.
-
-Find more examples in the [Awesome XMTP ⭐️](https://github.com/xmtp/awesome-xmtp) repository.
 
 ### Step 3: Deploy with Railway
 
