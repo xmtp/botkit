@@ -1,6 +1,6 @@
 # Build and deploy an XMTP Bot
 
-This guide will take you through the steps to create and deploy a simple bot using the [BotKit](https://github.com/xmtp/botkit) package.
+This guide will take you through the steps to create and deploy a simple bot
 
 ### Step 1: Installation
 
