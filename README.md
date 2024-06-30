@@ -17,7 +17,7 @@ This is the official repository for the XMTP bot kit and examples, powered by [
 
 ## Resources
 
-- See more examples in the [Awesome Botkit ⭐️](/resources/AWESOME.md) repo
+- See more examples in the [Awesome Botkit ⭐️](/resources/Awesome.md) section
 - Learn how to [build and deploy](/resources/Tutorial.md) a bot using xmtp and Railway.
 
 ## Contributing
